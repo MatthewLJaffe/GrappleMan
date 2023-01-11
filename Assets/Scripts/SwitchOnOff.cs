@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+/// <summary>
+/// base class for response to on / off states of buttons
+/// </summary>
 public abstract class SwitchOnOff : MonoBehaviour
 {
     [SerializeField] protected bool amWhite;

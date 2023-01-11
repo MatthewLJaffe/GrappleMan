@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System;
 
+/// <summary>
+/// player state entered when player latches on to wall with arrow / rope
+/// </summary>
 public class Grapple : PlayerState
 {
     [SerializeField] private GameObject grapple = null;

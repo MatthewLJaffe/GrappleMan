@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// displays launch arrow trajectory when player is in display and pull knob is selected
+/// </summary>
 public class KnobArrowEnable : MonoBehaviour
 {
     [SerializeField] private float range = 1;

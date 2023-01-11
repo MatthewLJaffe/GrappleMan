@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// instantiates projectile arrows with trajectory direction based on mouse position and magnitude based on draw time
+/// </summary>
 public class ProjectileShoot : PlayerState
 {
     [SerializeField] private float slowFactor;

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// controls display of arrows shot by player
+/// </summary>
 public class Projectile : MonoBehaviour
 {
     public float drawMultiplier = 1;
@@ -25,6 +28,7 @@ public class Projectile : MonoBehaviour
         rb.velocity *= drawMultiplier;
     }
 
+    //rotate arrow based on velocity
     private void FixedUpdate()
     {
         if(rotate)

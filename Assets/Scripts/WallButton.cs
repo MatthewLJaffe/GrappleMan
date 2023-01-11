@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// button that uses ontriggerenter instead of on collision enter
+/// </summary>
 public class WallButton : Button
 {
     private void OnTriggerEnter2D(Collider2D collision)

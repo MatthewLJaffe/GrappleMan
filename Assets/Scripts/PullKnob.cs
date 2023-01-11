@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System;
-
+/// <summary>
+/// launches player when clicked on if player is close enough to grapple to it
+/// </summary>
 public class PullKnob : MonoBehaviour
 {
     [SerializeField] private float range = 1;

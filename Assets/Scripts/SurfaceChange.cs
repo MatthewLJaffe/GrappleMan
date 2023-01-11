@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// switch that enables and disables collider
+/// </summary>
 public class SurfaceChange : SwitchOnOff
 {
     private BoxCollider2D boxCollider;

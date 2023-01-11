@@ -1,7 +1,9 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// display / update stamina prevent player from grappling without stamina
+/// </summary>
 public class StaminaDeplete : MonoBehaviour
 {
     [SerializeField] private Slider slider;
@@ -31,6 +33,7 @@ public class StaminaDeplete : MonoBehaviour
         {
             timeLeft -= Time.unscaledDeltaTime;
             slider.value = timeLeft;
+            //ungrapple
             if (timeLeft <= 0) {
                 PathDrawer.OnTether(NullVector.empty);
                 run = false;

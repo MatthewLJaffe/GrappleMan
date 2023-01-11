@@ -1,6 +1,8 @@
 ﻿using System;
 using UnityEngine;
-
+/// <summary>
+/// vertical jump usable when player is grounded
+/// </summary>
 public class Jump : PlayerState
 {
     private Rigidbody2D rb;

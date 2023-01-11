@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// allows player to move up and down rope grappled to
+/// </summary>
 public class RopeClimb : PlayerState
 {
     [SerializeField] private float climbSpeed = 1;

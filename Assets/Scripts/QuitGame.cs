@@ -14,7 +14,6 @@ public class QuitGame : MonoBehaviour
     private IEnumerator Quit()
     {
         yield return new WaitForSeconds(quitDelay);
-        Debug.Log("Quit");
         Application.Quit();
     }
 }

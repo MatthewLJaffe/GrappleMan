@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Used to orient arrow on top of pull knob to match your expected trajectory
+/// </summary>
 public class ArrowMove : MonoBehaviour
 {
     [SerializeField] protected Transform startPoint;

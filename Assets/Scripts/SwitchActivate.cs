@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class SwitchActivate : MonoBehaviour
 {
     public static Action OnSwitch = delegate { };

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+/// <summary>
+/// handles rope animation and display
+/// </summary>
 public class PathDrawer : MonoBehaviour
 {
     private LineRenderer _lineRenderer;
@@ -113,6 +116,7 @@ public class PathDrawer : MonoBehaviour
         return ((Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector2)shootPoint.position).magnitude <= ropeLength -1;
     }
 
+    //sinwave animation on rope when it is being shot out
     private IEnumerator AnimateRope(Vector3 targetPos)
     {
         if ((Vector2)targetPos == NullVector.empty || _lineRenderer.positionCount == resolution)
@@ -138,6 +142,7 @@ public class PathDrawer : MonoBehaviour
         pulling = false;
     }
 
+    //sets points in line renderer for rope animation
     private void SetPoints(Vector2 targetPos, float percent)
     {
         Vector2 ropeEnd = Vector2.Lerp(shootPoint.position, targetPos, percent);

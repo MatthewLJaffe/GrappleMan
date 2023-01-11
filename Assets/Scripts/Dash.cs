@@ -2,6 +2,9 @@
 using System.Collections;
 using System;
 
+/// <summary>
+/// player state for when player has grappled to launching circle
+/// </summary>
 public class Dash : PlayerState
 {
     [SerializeField] private AnimationCurve curve;
@@ -35,6 +38,7 @@ public class Dash : PlayerState
         }
     }
 
+    //change speed in dash based on animation curve
     private void FixedUpdate()
     {
         if (dashing)

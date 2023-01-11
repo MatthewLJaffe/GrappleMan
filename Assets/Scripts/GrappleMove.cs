@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
-
+/// <summary>
+/// state for moving player while grappling
+/// </summary>
 public class GrappleMove : PlayerState
 {
     [SerializeField] private float maxSpeed = 1;

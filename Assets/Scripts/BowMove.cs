@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// rotates player bow
+/// </summary>
 public class BowMove : ArrowMove
 {
     private bool flipY = false;

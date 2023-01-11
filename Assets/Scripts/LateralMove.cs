@@ -2,6 +2,9 @@
 using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// grounded lateral movement
+/// </summary>
 public class LateralMove : PlayerState
 {
     private Rigidbody2D rb;

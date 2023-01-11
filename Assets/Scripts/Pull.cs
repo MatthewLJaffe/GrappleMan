@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+/// <summary>
+/// dash movement player does when grappling to pull knob
+/// </summary>
 public class Pull : PlayerState
 {
     [SerializeField] private float pullSpeed;
